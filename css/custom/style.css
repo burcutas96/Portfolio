@@ -9,28 +9,21 @@ html{
 }
 
 body{
-    color: #84797d;
-    font-size: 1.6rem;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
-    height: 1000px;
+    color: #84797d !important;
+    font-size: 1.6rem !important;
+    font-weight: 300 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    height: 1000px !important;
 }
 
 a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.container{
-    width: 85%;
-    margin: 0 auto;
-    height: 100%;
+    color: #fff !important;
 }
 
 .main-header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background4.jpg);
+    background-image: url(../../images/background4.jpg);
     background-position: center;
     background-size:cover;
 }
@@ -39,35 +32,52 @@ a{
 
 /*** nav-bar ***/
 
-.nav-bar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+#mainNavbar{
     padding: 1.5rem 4.8rem;
-    transition: 0.6s;
+    transition: padding-top 0.6s, padding-bottom 0.6s, background .6s;
 }
 
-.nav-bar .name{
+#mainNavbar .navbar-brand{
     font-size: 3.6rem;
     font-weight: 600;
     transition: 0.6s;
+    padding: 0;
 }
 
-.nav-bar ul{
-    list-style: none;
-    display: flex;
+#mainNavbar .bi-list{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+nav.sticky .bi-list{
+    color: #000 !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.offcanvas{
+    width: 300px !important;
+}
+
+.offcanvas-body{
+    transition: all 0.6s !important;
+}
+
+#mainNavbar ul{
     font-size: 1.8rem;
-    align-items: center;
 }
 
-.nav-bar ul li{
+#mainNavbar ul>li{
     margin-left: 1.3rem;
 }
 
-.nav-bar ul li a{
+#mainNavbar ul>li a{
     display: inline-block;
     padding: 1rem .8rem;
     font-weight: 500;
@@ -76,7 +86,7 @@ a{
     position: relative;
 }
 
-.nav-bar ul li a::after{
+#mainNavbar ul>li a::after{
     position: absolute;
     content: "";
     top: 100%;
@@ -89,23 +99,36 @@ a{
     transition: transform 0.4s;
 }
 
-.nav-bar a:hover::after{
+#mainNavbar a:hover::after{
     transform: scaleX(1);
     transform-origin: left;
 }
 
 nav.sticky{
-    padding: .5rem 4.8rem;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
     background: #fff;
 }
 
-nav.sticky .name,
-nav.sticky ul li a{
-    color: #000;
+nav.sticky .navbar-brand,
+.offcanvas.show a,
+nav.sticky ul>li a{
+    color: #000 !important;
 }
 
-nav.sticky ul li a::after{
-    background: #000;
+nav.sticky ul>li a::after,
+.offcanvas.show ul>li a::after{
+    background: #000 !important;
+}
+
+@media (max-width:768px){
+    #mainNavbar{
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    nav.sticky ul>li a{
+        color: #fff !important;
+    }
 }
 
 
