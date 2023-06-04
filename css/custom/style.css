@@ -13,19 +13,11 @@ body{
     font-size: 1.6rem !important;
     font-weight: 300 !important;
     font-family: 'Montserrat', sans-serif !important;
-    height: 1000px !important;
 }
 
 a{
     color: #fff !important;
-}
-
-.main-header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../../images/background4.jpg);
-    background-position: center;
-    background-size:cover;
+    text-decoration: none !important;
 }
 
 
@@ -121,6 +113,7 @@ nav.sticky ul>li a::after,
     background: #000 !important;
 }
 
+
 @media (max-width:768px){
     #mainNavbar{
         padding-right: 2.4rem;
@@ -129,42 +122,125 @@ nav.sticky ul>li a::after,
     nav.sticky ul>li a{
         color: #fff !important;
     }
+
+    .main-header .hello{
+        font-size: 3rem !important;
+    }
+
+    .main-header .my{
+        font-size: 5.8rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .download{
+        font-size: 1.5rem;
+        letter-spacing: .15rem !important;
+        padding: 1.2rem 2.2rem !important;
+    }
 }
 
 
-/*** opening ***/
-.opening{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100% - 102px);
+@media (max-width: 578px){
+    .main-header .hello{
+        font-size: 2rem !important;
+    }
+
+    .main-header .my{
+        font-size: 4.2rem !important;
+    }
+
+    .download{
+        font-size: 1.2rem;
+        letter-spacing: .11rem !important;
+        padding: 1rem 2rem !important;
+    }
+}
+
+@media (max-width: 405px){
+    .main-header .hello{
+        font-size: 1.5rem !important;
+    }
+
+    .main-header .my{
+        font-size: 3.2rem !important;
+    }
+
+    .download {
+        line-height: .5rem;
+        font-weight: 400 !important;
+        letter-spacing: .15rem !important;
+        padding: 1.5rem 2rem !important;
+    }
+}
+
+@media (max-width: 991.98px){
+
+}
+
+
+/*** header ***/
+.main-header{
+    background-image: url(../../images/background4.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
     color: #fff;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
 }
 
-.opening .hello{
-    font-size: 2.5em;
+.main-header .hello{
+    font-size: 4rem;
     font-weight: 400;
 }
 
-.opening .my{
-    font-size: 4.2em;
+.main-header .my{
+    font-size: 6.8rem;
     font-weight: 500;
     margin-top: 2.5rem;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid;
     white-space: nowrap;  /*Yazının alt satırlara inmesini engelliyor.*/
     overflow: hidden;   
 }
 
 .anim-typewriter{
     animation: typewriter 5s steps(45) 1.2s 1 normal both,
-               blinkTextCursor 500ms steps(45) infinite normal; /*text imlecinin sonsuza kadar yanıp sönmesini sağlıyor.*/
+               blinkTextCursor 500ms steps(20) infinite normal; /*text imlecinin sonsuza kadar yanıp sönmesini sağlıyor.*/
+}
+
+.anim-typewriter-small{
+    animation: typewriter-small 5s steps(45) 1.2s 1 normal both,
+               blinkTextCursor 500ms steps(20) infinite normal;
+}
+
+.anim-typewriter-xsmall{
+    animation: typewriter-xsmall 5s steps(45) 1.2s 1 normal both,
+               blinkTextCursor 500ms steps(20) infinite normal;
+}
+
+.anim-typewriter-xxsmall{
+    animation: typewriter-xxsmall 5s steps(45) 1.2s 1 normal both,
+               blinkTextCursor 500ms steps(20) infinite normal;
 }
 
 @keyframes typewriter{
     from{width: 0;}
-    to{width: 60rem;}  /*text imlecinin, yazının sonuna gelmesi için width'in genişliği yazının genişliği kadar olmalı*/
+    to{width: 60.5rem;}  /*text imlecinin, yazının sonuna gelmesi için width'in genişliği yazının genişliği kadar olmalı*/
+}
+
+@keyframes typewriter-small{
+    from{width: 0;}
+    to{width: 51.8rem;}
+}
+
+@keyframes typewriter-xsmall{
+    from{width: 0;}
+    to{width: 38rem;}
+}
+
+@keyframes typewriter-xxsmall{
+    from{width: 0;}
+    to{width: 29rem;}
 }
 
 @keyframes blinkTextCursor{
@@ -176,17 +252,18 @@ nav.sticky ul>li a::after,
     display: inline-block;
     padding: 1.5rem 2.5rem;
     margin-top: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     border: 2px solid #fff;
     border-radius: 3rem;
     cursor: pointer;
     color: #fff;
     transition: all .3s;
+    letter-spacing: .2rem;
 }
 
 .download:hover{
     background-color: #fff;
-    color: #000;
+    color: #000 !important;
 }
 
 
