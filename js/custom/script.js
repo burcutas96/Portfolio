@@ -1,7 +1,34 @@
-window.addEventListener("scroll", function () {
-    var nav = document.querySelector("#mainNavbar");
-    nav.classList.toggle("sticky", window.scrollY > 0)
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function () {
+        var nav = document.querySelector("#mainNavbar");
+        nav.classList.toggle("sticky", window.scrollY > 0)
+    });
+    checkDevice();
 });
+
+
+
+//Kullanıcının mobil cihaz ile girip girmediğini kontrol ediyoruz.
+function checkDevice(){
+    var isMobile = window.matchMedia("(max-width: 768px)").matches;
+      
+    //Kullanıcı mobil cihaz ile girmişse bu kod bloğu çalışacak.
+    var links = document.querySelectorAll(".navbar-nav .nav-link");
+    if (isMobile) {
+        links.forEach(function(link) {
+            if(link.classList.contains("effect")){
+                link.classList.remove("effect");
+            }
+        })
+    } else{
+        links.forEach(function(link) {
+            if(!link.classList.contains("effect")){
+                link.classList.add("effect");
+            }
+        })
+    }
+}
+
 
 
 
@@ -50,5 +77,11 @@ function checkScreenWidth(){
     }
 }
 checkScreenWidth();
-window.addEventListener("resize", checkScreenWidth);
+window.addEventListener("resize", function(){
+    checkScreenWidth();
+    checkDevice();
+});
+
+
+
 

@@ -78,7 +78,7 @@ nav.sticky .bi-list{
     position: relative;
 }
 
-#mainNavbar ul>li a::after{
+#mainNavbar ul>li a.effect::after{
     position: absolute;
     content: "";
     top: 100%;
@@ -88,10 +88,10 @@ nav.sticky .bi-list{
     background: rgba(255,255,255,0.3);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.4s;
+    transition: transform 0.6s;
 }
 
-#mainNavbar a:hover::after{
+#mainNavbar ul>li a.effect:hover::after{
     transform: scaleX(1);
     transform-origin: left;
 }
