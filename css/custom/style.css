@@ -20,6 +20,10 @@ a{
     text-decoration: none !important;
 }
 
+.chrome-scroll{
+    scroll-behavior: auto !important;
+}
+
 .mySection{
     padding: 8rem 0;
 }
@@ -125,70 +129,6 @@ nav.sticky ul>li a::after,
 }
 
 
-@media (max-width:768px){
-    #mainNavbar{
-        padding-right: 2.4rem;
-        padding-left: 2.4rem;
-    }
-    nav.sticky ul>li a{
-        color: #fff !important;
-    }
-
-    .main-header .hello{
-        font-size: 3rem !important;
-    }
-
-    .main-header .my{
-        font-size: 5.8rem !important;
-        margin-top: 1.5rem !important;
-    }
-
-    .download{
-        font-size: 1.5rem;
-        letter-spacing: .15rem !important;
-        padding: 1.2rem 2.2rem !important;
-    }
-}
-
-
-@media (max-width: 578px){
-    .main-header .hello{
-        font-size: 2rem !important;
-    }
-
-    .main-header .my{
-        font-size: 4.2rem !important;
-    }
-
-    .download{
-        font-size: 1.2rem;
-        letter-spacing: .11rem !important;
-        padding: 1rem 2rem !important;
-    }
-}
-
-@media (max-width: 405px){
-    .main-header .hello{
-        font-size: 1.5rem !important;
-    }
-
-    .main-header .my{
-        font-size: 3.2rem !important;
-    }
-
-    .download {
-        line-height: .5rem;
-        font-weight: 400 !important;
-        letter-spacing: .15rem !important;
-        padding: 1.5rem 2rem !important;
-    }
-}
-
-@media (max-width: 991.98px){
-
-}
-
-
 /*** header ***/
 .main-header{
     background-image: url(../../images/background4.jpg);
@@ -279,6 +219,10 @@ nav.sticky ul>li a::after,
 
 
 /* Title-Striped */
+.title-striped{
+    margin-bottom: 2rem;
+}
+
 .title-striped .title{
     font-size: 6rem;
     font-weight: 400;
@@ -290,14 +234,14 @@ nav.sticky ul>li a::after,
     display: block;
     position: relative;
     color: #fff;
-    top: -4px;
+    top: -2px;
 }
 
 .title-striped i span::before,
 .title-striped i span::after{
     content: "";
     position: absolute;
-    width: 200px;
+    width: 175px;
     height: 2px;
     background-color: #fff;
     top: 18px;
@@ -308,7 +252,7 @@ nav.sticky ul>li a::after,
 }
 
 .title-striped i span::after{
-    right: 34px;
+    right: 35px;
 }
 
 
@@ -332,8 +276,169 @@ nav.sticky ul>li a::after,
 }
 
 
+@media (max-width: 991.98px){
+    .about-desc{
+        text-align: center;
+    }
+
+    .about-desc p{
+        margin: 0 auto;
+    }
+
+    #about .col-lg-6:nth-child(2){
+        margin-top: 3rem;
+    }
+}
 
 
+@media (max-width:768px){
+    #mainNavbar{
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    nav.sticky ul>li a{
+        color: #fff !important;
+    }
+
+    .main-header .hello{
+        font-size: 3rem !important;
+    }
+
+    .main-header .my{
+        font-size: 5.8rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .download{
+        font-size: 1.5rem;
+        letter-spacing: .15rem !important;
+        padding: 1.2rem 2.2rem !important;
+    }
+
+    .title-striped .title{
+        font-size: 5.5rem !important;
+    }
+
+    .title-striped i{
+        font-size: 2.1rem;
+        top: 0px;
+    }
+
+    .title-striped i span::before,
+    .title-striped i span::after{
+        width: 150px;
+        top: 16px;
+    }
+
+    .title-striped i span::before{
+        left: 30px;
+    }
+    
+    .title-striped i span::after{
+        right: 30px;
+    }
+
+    .my-img{
+        max-width: 23rem !important;
+    }    
+
+    .about-desc h1{
+        font-size: 2rem;
+    }
+
+    .about-desc span{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 578px){
+    .mySection{
+        padding: 6rem 0;
+    }
+
+    .main-header .hello{
+        font-size: 2rem !important;
+    }
+
+    .main-header .my{
+        font-size: 4.2rem !important;
+    }
+
+    .download{
+        font-size: 1.2rem;
+        letter-spacing: .11rem !important;
+        padding: 1rem 2rem !important;
+    }
+
+    .title-striped .title{
+        font-size: 4.2rem !important;
+    }
+
+    .title-striped i span::before,
+    .title-striped i span::after{
+        width: 110px;
+        top: 16px;
+    }
+}
+
+
+@media (max-width: 405px){
+    .main-header .hello{
+        font-size: 1.5rem !important;
+    }
+
+    .main-header .my{
+        font-size: 3.2rem !important;
+    }
+
+    .download {
+        line-height: .5rem;
+        font-weight: 400 !important;
+        letter-spacing: .15rem !important;
+        padding: 1.5rem 2rem !important;
+    }
+
+    .title-striped .title{
+        font-size: 3.8rem !important;
+    }
+
+    .title-striped i {
+        font-size: 1.8rem;
+        top: 2px;
+    }
+
+    .title-striped i span::before,
+    .title-striped i span::after{
+        width: 100px;
+        top: 13px;
+    }
+
+    .title-striped i span::before{
+        left: 26px;
+    }
+    
+    .title-striped i span::after{
+        right: 26px;
+    }
+
+    .my-img{
+        max-width: 19rem !important;
+    }
+
+    .about-desc h1{
+        font-size: 1.7rem;
+    }
+
+    .about-desc span{
+        font-size: 2.5rem;
+    }
+
+    .about-desc p{
+        font-size: 1.5rem;
+    }
+}
 
 
 

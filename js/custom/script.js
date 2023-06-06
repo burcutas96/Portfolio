@@ -40,7 +40,7 @@ for (let i = 0; i < BtnCanvas.length; i++) {
 
 
 
-function checkScreenWidth(){
+function checkScreenWidthForAnimation(){
     var element = document.querySelector(".my");
     if (window.innerWidth > 768){
         if (!element.classList.contains("anim-typewriter")) {    
@@ -75,12 +75,28 @@ function checkScreenWidth(){
         }
     }
 }
-checkScreenWidth();
+checkScreenWidthForAnimation();
+
+
+
+function checkScreenWidthForClient(){
+    var element = document.documentElement;;
+    if(window.innerWidth < 991.98){
+        if (navigator.userAgent.indexOf("Chrome") != -1) {    
+            element.classList.add("chrome-scroll");
+        }
+    }
+    else if (element.classList.contains("chrome-scroll")){
+        element.classList.remove("chrome-scroll");
+    }
+}
+checkScreenWidthForClient();
 
 
 
 window.addEventListener("resize", function(){
-    checkScreenWidth();
+    checkScreenWidthForAnimation();
+    checkScreenWidthForClient();
     checkDevice();
 });
 
