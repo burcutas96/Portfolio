@@ -31,7 +31,6 @@ function checkDevice(){
 
 
 
-
 var BtnCanvas = document.querySelectorAll(".btn-close-canvas");
 for (let i = 0; i < BtnCanvas.length; i++) {
     BtnCanvas[i].addEventListener("click", function(){
@@ -77,6 +76,9 @@ function checkScreenWidth(){
     }
 }
 checkScreenWidth();
+
+
+
 window.addEventListener("resize", function(){
     checkScreenWidth();
     checkDevice();

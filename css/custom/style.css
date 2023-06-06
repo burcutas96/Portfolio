@@ -20,6 +20,17 @@ a{
     text-decoration: none !important;
 }
 
+.mySection{
+    padding: 8rem 0;
+}
+
+.background-dark{
+    background-color: #000;
+}
+
+.background-grey{
+    background-color: #0F1113;
+}
 
 
 /*** nav-bar ***/
@@ -267,6 +278,58 @@ nav.sticky ul>li a::after,
 }
 
 
+/* Title-Striped */
+.title-striped .title{
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+.title-striped i{
+    font-size: 2.5rem;
+    display: block;
+    position: relative;
+    color: #fff;
+    top: -4px;
+}
+
+.title-striped i span::before,
+.title-striped i span::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    top: 18px;
+}
+
+.title-striped i span::before{
+    left: 34px;
+}
+
+.title-striped i span::after{
+    right: 34px;
+}
+
+
+/* About */
+.my-img{
+    max-width: 25rem !important;
+    border-radius: 30px !important;
+}
+
+.about-desc span{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.about-desc p{
+    color: #c0c0c0;
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
 
 
 
