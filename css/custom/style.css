@@ -276,6 +276,87 @@ nav.sticky ul>li a::after,
 }
 
 
+/* Projects */
+
+#projects .repo{
+    padding: 25px;
+    height: 200px;
+}
+
+.repo-border{
+    border: .5px solid #30363d;
+    border-radius: 5px;
+}
+
+.color-fg-muted {
+    color: #7d8590 !important;
+}
+
+.octicon {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.p-repo-title a{
+    color: #fff;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+.p-repo-title a:hover{
+    color: #a5a7ac !important;
+}
+
+.project-body p{
+    color: #c0c0c0;
+    font-size: 1.5rem;
+}
+
+.repo-language-color{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: .3rem;
+}
+
+.html-color{
+    background-color: #e34c26;
+}
+
+.csharp-color{
+    background-color: #178600;
+}
+
+.repo-language{
+    color: #c0c0c0;
+    font-size: 1.5rem;
+}
+
+.project-footer .bi{
+    font-size: 1.4rem;
+}
+
+.project-footer .bi,
+.project-footer svg{
+    color: #a5a7ac;
+    margin-right: .1rem;
+}
+
+.project-footer .point{
+    font-size: 1.7rem;
+    color: #a5a7ac;
+    position: relative;
+    top: 2px;
+    font-family: 'Open Sans',  sans-serif;
+}
+
+
+
 @media (max-width: 991.98px){
     .about-desc{
         text-align: center;
@@ -291,7 +372,7 @@ nav.sticky ul>li a::after,
 }
 
 
-@media (max-width:768px){
+@media (max-width:767px){
     #mainNavbar{
         padding-right: 2.4rem;
         padding-left: 2.4rem;
@@ -349,6 +430,15 @@ nav.sticky ul>li a::after,
     .about-desc span{
         font-size: 3rem;
         font-weight: 600;
+    }
+
+    #projects .row{
+        margin: 0 15px;
+        margin-bottom: 0px !important;
+    }
+
+    .p-repo-title a:hover{
+        color: #fff !important;
     }
 }
 
@@ -439,6 +529,8 @@ nav.sticky ul>li a::after,
         font-size: 1.5rem;
     }
 }
+
+
 
 
 
