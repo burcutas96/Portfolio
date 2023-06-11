@@ -8,15 +8,25 @@ html{
     font-size: 10px;
 }
 
+:root{
+    --night: #2f3e46;
+    --space: #354f52;
+    --vintage: #4a4e69;
+    --halloween: #adb5bd;
+    --white: #eee;
+    --red: #e34c26;
+    --yellow: #178600;
+}
+
 body{
-    color: #84797d !important;
+    color: var(--space) !important;
     font-size: 1.6rem !important;
     font-weight: 300 !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
 a{
-    color: #fff !important;
+    color: var(--white) !important;
     text-decoration: none !important;
 }
 
@@ -28,12 +38,12 @@ a{
     padding: 8rem 0;
 }
 
-.background-dark{
-    background-color: #000;
+.background-night{
+    background-color: var(--night);
 }
 
-.background-grey{
-    background-color: #0F1113;
+.background-space{
+    background-color: var(--space);
 }
 
 
@@ -53,11 +63,11 @@ a{
 
 #mainNavbar .bi-list{
     font-size: 3.5rem;
-    color: #fff;
+    color: var(--white);
 }
 
 nav.sticky .bi-list{
-    color: #000 !important;
+    color: var(--night) !important;
 }
 
 .navbar-toggler{
@@ -114,18 +124,18 @@ nav.sticky .bi-list{
 nav.sticky{
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
-    background: #fff;
+    background: var(--white);
 }
 
 nav.sticky .navbar-brand,
 .offcanvas.show a,
 nav.sticky ul>li a{
-    color: #000 !important;
+    color: var(--night) !important;
 }
 
 nav.sticky ul>li a::after,
 .offcanvas.show ul>li a::after{
-    background: #000 !important;
+    background: var(--night) !important;
 }
 
 
@@ -135,7 +145,7 @@ nav.sticky ul>li a::after,
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: var(--white);
     padding-top: 20rem;
     padding-bottom: 20rem;
 }
@@ -204,17 +214,17 @@ nav.sticky ul>li a::after,
     padding: 1.5rem 2.5rem;
     margin-top: 2.5rem;
     font-weight: 600;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 3rem;
     cursor: pointer;
-    color: #fff;
+    color: var(--white);
     transition: all .3s;
     letter-spacing: .2rem;
 }
 
 .download:hover{
-    background-color: #fff;
-    color: #000 !important;
+    background-color: var(--white);
+    color: var(--night) !important;
 }
 
 
@@ -233,7 +243,7 @@ nav.sticky ul>li a::after,
     font-size: 2.5rem;
     display: block;
     position: relative;
-    color: #fff;
+    color: var(--white);
     top: -2px;
 }
 
@@ -243,7 +253,7 @@ nav.sticky ul>li a::after,
     position: absolute;
     width: 175px;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--white);
     top: 18px;
 }
 
@@ -270,7 +280,7 @@ nav.sticky ul>li a::after,
 }
 
 .about-desc p{
-    color: #c0c0c0;
+    color: var(--white);
     width: 80%;
     margin-bottom: 0.5rem;
 }
@@ -281,10 +291,7 @@ nav.sticky ul>li a::after,
 #projects .repo{
     padding: 25px;
     height: 200px;
-}
-
-.repo-border{
-    border: .5px solid #30363d;
+    border: .5px solid var(--white);
     border-radius: 5px;
 }
 
@@ -300,17 +307,17 @@ nav.sticky ul>li a::after,
 }
 
 .p-repo-title a{
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
     transition: all .2s ease-in-out;
 }
 
 .p-repo-title a:hover{
-    color: #a5a7ac !important;
+    color: var(--vintage) !important;
 }
 
 .project-body p{
-    color: #c0c0c0;
+    color: var(--white);
     font-size: 1.5rem;
 }
 
@@ -325,15 +332,15 @@ nav.sticky ul>li a::after,
 }
 
 .html-color{
-    background-color: #e34c26;
+    background-color: var(--red);
 }
 
 .csharp-color{
-    background-color: #178600;
+    background-color: var(--yellow);
 }
 
 .repo-language{
-    color: #c0c0c0;
+    color: var(--white);
     font-size: 1.5rem;
 }
 
@@ -343,18 +350,63 @@ nav.sticky ul>li a::after,
 
 .project-footer .bi,
 .project-footer svg{
-    color: #a5a7ac;
+    color: var(--white);
     margin-right: .1rem;
 }
 
 .project-footer .point{
     font-size: 1.7rem;
-    color: #a5a7ac;
+    color: var(--white);
     position: relative;
     top: 2px;
     font-family: 'Open Sans',  sans-serif;
 }
 
+
+/* Skill */
+
+#skills .row{
+    margin-top: 6.5rem;
+}
+
+.language-icon{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: var(--night);
+    transform: rotate(45deg);
+}
+
+.language-icon i{
+    color: var(--white);
+    font-size: 6rem;
+    transform: rotate(-45deg);
+}
+
+.language-icon .ms-sql{
+    font-size: 7.5rem;
+}
+
+.language-icon .img-lang{
+    width: 60px;
+    height: 60px;
+    transform: rotate(-45deg);
+}
+
+.language p{
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    color: var(--white);
+}
+
+
+@media (min-width: 992px) {
+    #skills .col-lg-3:nth-child(n+5).margin-top{
+        margin-top: 7rem;
+    }
+}
 
 
 @media (max-width: 991.98px){
@@ -369,6 +421,10 @@ nav.sticky ul>li a::after,
     #about .col-lg-6:nth-child(2){
         margin-top: 3rem;
     }
+    
+    #skills .col-lg-3:nth-child(n+3).margin-top{
+        margin-top: 7rem;
+    }
 }
 
 
@@ -378,7 +434,7 @@ nav.sticky ul>li a::after,
         padding-left: 2.4rem;
     }
     nav.sticky ul>li a{
-        color: #fff !important;
+        color: var(--white) !important;
     }
 
     .main-header .hello{
@@ -438,7 +494,15 @@ nav.sticky ul>li a::after,
     }
 
     .p-repo-title a:hover{
-        color: #fff !important;
+        color: var(--white) !important;
+    }
+
+    #skills .row{
+        margin-top: 6rem;
+    }
+
+    #skills .col-lg-3:nth-child(n+2).margin-top{
+        margin-top: 7rem;
     }
 }
 
@@ -470,6 +534,30 @@ nav.sticky ul>li a::after,
     .title-striped i span::after{
         width: 110px;
         top: 16px;
+    }
+
+    .language-icon{
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+    }
+    
+    .language-icon i{
+        font-size: 4.5rem;
+    }
+
+    .language-icon .img-lang{
+        width: 45px;
+        height: 45px;
+    }
+
+    .language-icon .ms-sql{
+        font-size: 6rem;
+    }
+    
+    .language p{
+        font-size: 2.5rem;
+        margin-top: 3.7rem;
     }
 }
 
@@ -527,6 +615,30 @@ nav.sticky ul>li a::after,
 
     .about-desc p{
         font-size: 1.5rem;
+    }
+
+    .language-icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 18px;
+    }
+    
+    .language-icon i{
+        font-size: 4.1rem;
+    }
+
+    .language-icon .img-lang{
+        width: 41px;
+        height: 41px;
+    }
+
+    .language-icon .ms-sql{
+        font-size: 5.1rem;
+    }
+    
+    .language p{
+        font-size: 2.2rem;
+        margin-top: 3.2rem;
     }
 }
 

@@ -50,7 +50,7 @@ function checkScreenWidthForAnimation(){
             element.classList.remove("anim-typewriter-xxsmall");
         }
     }
-    else if(window.innerWidth > 578 && window.innerWidth <= 768){
+    else if(window.innerWidth > 576 && window.innerWidth <= 768){
         if (!element.classList.contains("anim-typewriter-small")) {    
             element.classList.add("anim-typewriter-small");
             element.classList.remove("anim-typewriter");
@@ -58,7 +58,7 @@ function checkScreenWidthForAnimation(){
             element.classList.remove("anim-typewriter-xxsmall");
         }
     }
-    else if(window.innerWidth > 405 && window.innerWidth <= 578){
+    else if(window.innerWidth > 405 && window.innerWidth <= 576){
         if (!element.classList.contains("anim-typewriter-xsmall")) {    
             element.classList.add("anim-typewriter-xsmall");
             element.classList.remove("anim-typewriter");
@@ -80,7 +80,7 @@ checkScreenWidthForAnimation();
 
 
 function checkScreenWidthForClient(){
-    var element = document.documentElement;;
+    var element = document.documentElement;
     if(window.innerWidth < 991.98){
         if (navigator.userAgent.indexOf("Chrome") != -1) {    
             element.classList.add("chrome-scroll");
