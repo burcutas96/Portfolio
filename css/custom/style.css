@@ -9,10 +9,10 @@ html{
 }
 
 :root{
-    --night: #2f3e46;
-    --space: #354f52;
-    --vintage: #4a4e69;
-    --halloween: #adb5bd;
+    --night: #0a0908;
+    --space: #0f1011;
+    --vintage: #6d6a75;
+    --halloween: #bfbdc1;
     --white: #eee;
     --red: #e34c26;
     --yellow: #178600;
@@ -65,7 +65,7 @@ a{
     width: calc(100% - 10px);
     background-color: var(--white);
     border-radius: 50%;
-    -webkit-text-stroke: .15rem;
+    -webkit-text-stroke: .13rem;
     place-items: center;
     display: none;
     font-size: 2rem;
@@ -256,7 +256,7 @@ nav.sticky ul>li a::after,
 
 /* Title-Striped */
 .title-striped{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .title-striped .title{
@@ -392,7 +392,7 @@ nav.sticky ul>li a::after,
 /* Skill */
 
 #skills .row{
-    margin-top: 6.5rem;
+    margin-top: 5.5rem;
 }
 
 .language-icon{
