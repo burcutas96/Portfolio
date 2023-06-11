@@ -18,11 +18,11 @@ let calcScrollValue = () =>{
         document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100) / calcHeight);
 
-    if(pos > 150 && window.innerWidth < 768){
+    if(pos > 150 && window.innerWidth < 767){
         scrollProgress.style.display = "none";
         progressValue.style.display = "none";
     }
-    else if(pos > 150 && window.innerWidth > 768){
+    else if(pos > 150 && window.innerWidth > 767){
         scrollProgress.style.display = "grid";
         progressValue.style.display = "grid";
     }
@@ -79,7 +79,7 @@ for (let i = 0; i < BtnCanvas.length; i++) {
 
 function checkScreenWidthForAnimation(){
     var element = document.querySelector(".my");
-    if (window.innerWidth > 768){
+    if (window.innerWidth > 767){
         if (!element.classList.contains("anim-typewriter")) {    
             element.classList.add("anim-typewriter");
             element.classList.remove("anim-typewriter-small");
@@ -87,7 +87,7 @@ function checkScreenWidthForAnimation(){
             element.classList.remove("anim-typewriter-xxsmall");
         }
     }
-    else if(window.innerWidth > 576 && window.innerWidth <= 768){
+    else if(window.innerWidth > 576 && window.innerWidth <= 767){
         if (!element.classList.contains("anim-typewriter-small")) {    
             element.classList.add("anim-typewriter-small");
             element.classList.remove("anim-typewriter");

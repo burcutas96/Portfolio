@@ -53,6 +53,7 @@ a{
     right: 20px;
     height: 50px;
     width: 50px;
+    display: none;
     place-items: center;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--night);
@@ -66,6 +67,7 @@ a{
     border-radius: 50%;
     -webkit-text-stroke: .15rem;
     place-items: center;
+    display: none;
     font-size: 2rem;
     color: var(--night);
 }
@@ -314,7 +316,7 @@ nav.sticky ul>li a::after,
 
 #projects .repo{
     padding: 25px;
-    height: 200px;
+    min-height: 210px;
     border: .5px solid var(--white);
     border-radius: 5px;
 }
@@ -461,6 +463,11 @@ nav.sticky ul>li a::after,
         color: var(--white) !important;
     }
 
+    .main-header{
+        padding-top: 23rem;
+        padding-bottom: 23rem;
+    }
+
     .main-header .hello{
         font-size: 3rem !important;
     }
@@ -534,6 +541,11 @@ nav.sticky ul>li a::after,
 @media (max-width: 578px){
     .mySection{
         padding: 6rem 0;
+    }
+
+    .main-header{
+        padding-top: 26rem;
+        padding-bottom: 26rem;
     }
 
     .main-header .hello{
