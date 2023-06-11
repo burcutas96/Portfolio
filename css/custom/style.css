@@ -47,6 +47,33 @@ a{
 }
 
 
+#progress{
+    z-index: 5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#progress-value{
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    -webkit-text-stroke: .15rem;
+    place-items: center;
+    font-size: 2rem;
+    color: #262323;
+}
+
+
 /*** nav-bar ***/
 
 #mainNavbar{
