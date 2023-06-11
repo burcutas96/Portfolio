@@ -9,9 +9,9 @@ html{
 }
 
 :root{
-    --night: #0a0908;
-    --space: #0f1011;
-    --vintage: #6d6a75;
+    --night: #191919;
+    --space: #313638;
+    --vintage: #515052;
     --halloween: #bfbdc1;
     --white: #eee;
     --red: #e34c26;
@@ -317,7 +317,7 @@ nav.sticky ul>li a::after,
 #projects .repo{
     padding: 25px;
     min-height: 210px;
-    border: .5px solid var(--white);
+    border: .5px solid var(--halloween);
     border-radius: 5px;
 }
 
