@@ -18,11 +18,17 @@ let calcScrollValue = () =>{
         document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100) / calcHeight);
 
-    if(pos > 100){
+    if(pos > 150 && window.innerWidth < 768){
+        scrollProgress.style.display = "none";
+        progressValue.style.display = "none";
+    }
+    else if(pos > 150 && window.innerWidth > 768){
         scrollProgress.style.display = "grid";
+        progressValue.style.display = "grid";
     }
     else{
         scrollProgress.style.display = "none";
+        progressValue.style.display = "none";
     }
 
     scrollProgress.addEventListener("click", () => {
