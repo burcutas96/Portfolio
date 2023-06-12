@@ -13,6 +13,7 @@ html{
     --space: #011219;
     --vintage: #515052;
     --halloween: #bfbdc1;
+    --shades: #bfbcc2;
     --white: #eee;
     --red: #e34c26;
     --yellow: #178600;
@@ -501,6 +502,23 @@ nav.sticky ul>li a::after{
 }
 
 
+/* Footer */
+.footerSection{
+    padding: 15px 0;
+    background-color: var(--space);
+    text-align: center;
+}
+
+.footerSection .footer-design{
+    font-size: 1.25rem;
+    color: var(--shades);
+}
+
+.footerSection .footer-name{
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
 @media (min-width: 992px) {
     #skills .col-lg-3:nth-child(n+5).margin-top{
         margin-top: 7rem;
@@ -760,6 +778,18 @@ nav.sticky ul>li a::after{
     .card .card-content a i{
         font-size: 1.5rem;
     }
+
+    .footerSection{
+        padding: 13px 0;
+    }
+    
+    .footerSection .footer-design{
+        font-size: 1.1rem;
+    }
+    
+    .footerSection .footer-name{
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -870,6 +900,10 @@ nav.sticky ul>li a::after{
 
     .card .card-content a i{
         font-size: 1.45rem;
+    }
+
+    .footerSection{
+        padding: 10px 0;
     }
 }
 
