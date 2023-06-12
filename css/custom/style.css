@@ -9,13 +9,14 @@ html{
 }
 
 :root{
-    --night: #011219;
-    --space: #132229;
+    --night: #132229;
+    --space: #011219;
     --vintage: #515052;
     --halloween: #bfbdc1;
     --white: #eee;
     --red: #e34c26;
     --yellow: #178600;
+    --darkolive: #556b2f;
 }
 
 body{
@@ -93,7 +94,7 @@ a{
 }
 
 nav.sticky .bi-list{
-    color: var(--night) !important;
+    color: var(--white) !important;
 }
 
 .navbar-toggler{
@@ -150,18 +151,21 @@ nav.sticky .bi-list{
 nav.sticky{
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
-    background: var(--white);
+    background: var(--darkolive);
 }
 
 nav.sticky .navbar-brand,
-.offcanvas.show a,
 nav.sticky ul>li a{
-    color: var(--night) !important;
+    color: var(--white) !important;
+}
+
+.offcanvas.show a{
+    color: var(--space) !important;
 }
 
 nav.sticky ul>li a::after,
 .offcanvas.show ul>li a::after{
-    background: var(--night) !important;
+    background: var(--vintage) !important;
 }
 
 
