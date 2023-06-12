@@ -17,6 +17,7 @@ html{
     --red: #e34c26;
     --yellow: #178600;
     --darkolive: #556b2f;
+    --lightolive: #718d42;
 }
 
 body{
@@ -93,10 +94,6 @@ a{
     color: var(--white);
 }
 
-nav.sticky .bi-list{
-    color: var(--white) !important;
-}
-
 .navbar-toggler{
     border: none !important;
 }
@@ -155,15 +152,17 @@ nav.sticky{
 }
 
 nav.sticky .navbar-brand,
-nav.sticky ul>li a{
+nav.sticky ul>li a,
+nav.sticky .bi-list{
     color: var(--white) !important;
 }
 
-.offcanvas.show a{
+.offcanvas.show a,
+nav.sticky ul>li a::after{
     color: var(--space) !important;
 }
 
-nav.sticky ul>li a::after,
+
 .offcanvas.show ul>li a::after{
     background: var(--vintage) !important;
 }
@@ -432,6 +431,76 @@ nav.sticky ul>li a::after,
 }
 
 
+/* Contact */
+#contact .row{
+    margin-top: 6rem;
+}
+
+#contact .row:nth-child(n+2){
+    margin-top: 8rem;
+}
+
+#contact .card{
+    min-height: 200px;
+    width: 70%;
+    background-color: var(--space);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card .badge-properties{
+    background-color: var(--space);
+    width: 80px;
+    height: 80px;
+    color: var(--halloween);
+    border: 5px solid var(--night);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .badge-properties i{
+    color: var(--lightolive);
+    font-size: 3.5rem;
+}
+
+.card .badge-properties img{
+    width: 35px;
+    height: 35px;
+}
+
+.card .card-content{
+    margin-top: 2.5rem;
+}
+
+.card .card-content .card-title{
+    color: #BDBDBD;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card .card-content .card-description{
+    color: var(--white);
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-top: 1.2rem;
+}
+
+.card .card-content a{
+    display: inline-block;
+    margin: 12px 10px 0;
+    transition: all .2s ease-in-out;
+}
+
+.card .card-content a:hover{
+    color: var(--lightolive) !important;
+}
+
+.card .card-content a i{
+    font-size: 2rem;
+}
+
+
 @media (min-width: 992px) {
     #skills .col-lg-3:nth-child(n+5).margin-top{
         margin-top: 7rem;
@@ -454,6 +523,27 @@ nav.sticky ul>li a::after,
     
     #skills .col-lg-3:nth-child(n+3).margin-top{
         margin-top: 7rem;
+    }
+
+    #contact .row .col-lg-6:nth-child(n+2){
+        margin-top: 8rem;
+    }
+
+    #contact .card{
+        width: 60%;
+    }
+
+    .card .badge-properties i{
+        font-size: 3.1rem;
+    }
+    
+    .card .badge-properties img{
+        width: 31px;
+        height: 31px;
+    }
+
+    .card .card-content{
+        margin-top: 2rem;
     }
 }
 
@@ -539,6 +629,45 @@ nav.sticky ul>li a::after,
     #skills .col-lg-3:nth-child(n+2).margin-top{
         margin-top: 7rem;
     }
+
+    #contact .card{
+        min-height: 180px;
+    }
+
+    .card .badge-properties{
+        width: 75px;
+        height: 75px;
+    }
+
+    .card .badge-properties i{
+        font-size: 2.8rem;
+    }
+    
+    .card .badge-properties img{
+        width: 28px;
+        height: 28px;
+    }
+
+    .card .card-content{
+        margin-top: 1.8rem;
+    }
+
+    .card .card-content .card-title{
+        font-size: 1.8rem;
+    }
+    
+    .card .card-content .card-description{
+        font-size: 2rem;
+        margin-top: 1.2rem;
+    }
+
+    .card .card-content a:hover{
+        color: var(--white) !important;
+    }
+
+    .card .card-content a i{
+        font-size: 1.7rem;
+    }
 }
 
 
@@ -598,6 +727,38 @@ nav.sticky ul>li a::after,
     .language p{
         font-size: 2.5rem;
         margin-top: 3.7rem;
+    }
+
+    #contact .card{
+        width: 77%;
+        border-radius: 20px;
+        min-height: 160px;
+    }
+
+    .card .badge-properties{
+        width: 70px;
+        height: 70px;
+    }
+
+    .card .badge-properties i{
+        font-size: 2.4rem;
+    }
+    
+    .card .badge-properties img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .card .card-content .card-title{
+        font-size: 1.5rem;
+    }
+    
+    .card .card-content .card-description{
+        font-size: 1.7rem;
+    }
+
+    .card .card-content a i{
+        font-size: 1.5rem;
     }
 }
 
@@ -679,6 +840,36 @@ nav.sticky ul>li a::after,
     .language p{
         font-size: 2.2rem;
         margin-top: 3.2rem;
+    }
+
+    #contact .card{
+        width: 80%;
+    }
+
+    .card .badge-properties{
+        width: 65px;
+        height: 65px;
+    }
+
+    .card .badge-properties i{
+        font-size: 2.1rem;
+    }
+    
+    .card .badge-properties img{
+        width: 21px;
+        height: 21px;
+    }
+
+    .card .card-content .card-title{
+        font-size: 1.4rem;
+    }
+    
+    .card .card-content .card-description{
+        font-size: 1.6rem;
+    }
+
+    .card .card-content a i{
+        font-size: 1.45rem;
     }
 }
 

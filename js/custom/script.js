@@ -47,7 +47,7 @@ window.onload = calcScrollValue;
 
 //Kullanıcının mobil cihaz ile girip girmediğini kontrol ediyoruz.
 function checkDevice(){
-    var isMobile = window.matchMedia("(max-width: 768px)").matches;
+    var isMobile = window.matchMedia("(max-width: 767px)").matches;
       
     //Kullanıcı mobil cihaz ile girmişse bu kod bloğu çalışacak.
     var links = document.querySelectorAll(".navbar-nav .nav-link");
