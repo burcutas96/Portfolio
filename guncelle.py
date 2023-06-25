@@ -50,7 +50,7 @@ eklenecek_metin = "".join(
                     <path d="M6.5 7.75v1A2.25 2.25 0 0 0 8.75 11h6.5a2.25 2.25 0 0 0 2.25-2.25v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-6.5A3.75 3.75 0 0 1 5 8.75v-1Z"></path>
                     <path d="M11.25 16.25v-5h1.5v5h-1.5Z"></path>
                 </svg>
-                <span class="point">{repolar.get("forks")}</span>
+                <span class="point">{repo.get("forks")}</span>
             </div>
         </div>
     </div>
