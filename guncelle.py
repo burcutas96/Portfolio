@@ -12,8 +12,7 @@ repolar = [
         if repo.get("language") and repo.get("description")
 ]
 repolar = sorted(repolar, key=lambda veri: veri["stargazers_count"], reverse=True)
-from Kekik.cli import konsol
-konsol.print(repolar[0])
+
 with open("__index.html", "r", encoding="utf-8") as dosya:
     eldeki_dosya = dosya.read()
 
