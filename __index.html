@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Burcu Taş | Software Developer</title>
+</head>
+
+<body id="page-body">
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class="bi bi-arrow-up"></i>
+        </span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-md">
+            <a href="#page-body" class="navbar-brand">Burcu</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" 
+                data-bs-target="#myNavbar">
+                <span class="bi bi-list"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" id="myNavbar">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title">
+                        <a href="#page-body" class="nav-link fw-bold btn-close-canvas">Menu</a>
+                    </h3>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a href="#page-body" class="nav-link btn-close-canvas">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link btn-close-canvas">About</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link btn-close-canvas">Projects</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link btn-close-canvas">Skills</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link btn-close-canvas">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="main-header text-center">
+        <div class="container-md d-inline-flex flex-column justify-content-center align-items-center">
+            <div class="hello">Hello & Welcome</div>
+            <span class="my">I Am A Developer</span>
+            <a href="download/CV.pdf" class="download" download>Download CV</a>
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <section id="about" class="mySection background-space">
+        <div class="container-md">
+            <div class="title-striped d-flex flex-column justify-content-center align-items-center text-white">
+                <span class="title">About Me</span>
+                <i class="bi bi-star-fill">
+                    <span></span>
+                </i>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="images/IMG-20220409-WA0005~2.jpg" alt="my" class="img-fluid img-thumbnail my-img">
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="about-desc text-white">
+                        <h1 class="text-uppercase">Hı There!</h1>
+                        <span class="text-uppercase">I'm Burcu Taş</span>
+                        <p>
+                            I'm a software developer in Turkey.
+                            I've been working in software development for over 3 years.
+                        </p>
+                        <p>
+                            In addition to the Back-End, I also make improvements in the Front-End and database areas.
+                            I strives to build immersive and beautiful web applications through carefully crafted code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project -->
+    <section id="projects" class="mySection background-night">
+        <div class="container-md">
+            <div class="title-striped d-flex flex-column justify-content-center align-items-center text-white">
+                <span class="title">My Projects</span>
+                <i class="bi bi-star-fill">
+                    <span></span>
+                </i>
+            </div>
+
+            <div class="row g-4 mb-4">
+                {{ REPOLAR }}
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="mySection background-space">
+        <div class="container-md">
+            <div class="title-striped d-flex flex-column justify-content-center align-items-center text-white">
+                <span class="title">My Skills</span>
+                <i class="bi bi-star-fill">
+                    <span></span>
+                </i>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center">
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">
+                            <img src="icons/csharp.png" class="img-lang" alt="csharp">  
+                        </span>
+                        <p>C#</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center">
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">
+                            <img src="icons/aspnet.png" class="img-lang" alt="csharp">  
+                        </span>
+                        <p>Asp .Net Core</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center">
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">
+                            <i class="devicon-dotnetcore-plain"></i>  
+                        </span>
+                        <p>.Net Core</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center">
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">
+                            <i class="devicon-microsoftsqlserver-plain-wordmark ms-sql"></i>      
+                        </span>
+                        <p>Ms Sql Server</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center" >
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">
+                            <i class="devicon-mysql-plain"></i>    
+                        </span>
+                        <p>My Sql</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center" >
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">  
+                            <i class="devicon-bootstrap-plain"></i>  
+                        </span>
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center" >
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">  
+                            <i class="devicon-html5-plain"></i>
+                        </span>
+                        <p>Html</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center margin-top">
+                    <div class="language d-flex flex-column align-items-center" >
+                        <span class="language-icon d-flex justify-content-center align-content-center flex-wrap">  
+                            <i class="devicon-css3-plain"></i>
+                        </span>
+                        <p>Css</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="mySection background-night">
+        <div class="container-md">
+            <div class="title-striped d-flex flex-column justify-content-center align-items-center text-white">
+                <span class="title">Contact</span>
+                <i class="bi bi-star-fill">
+                    <span></span>
+                </i>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <span class="badge position-absolute top-0 start-50 translate-middle rounded-circle 
+                            badge-properties">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <div class="card-content">
+                            <p class="card-title">Email</p>
+                            <p class="card-description">burcutas636@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <span class="badge position-absolute top-0 start-50 translate-middle rounded-circle 
+                            badge-properties">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <div class="card-content">
+                            <p class="card-title">Address</p>
+                            <p class="card-description">Turkey, Şanlıurfa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <span class="badge position-absolute top-0 start-50 translate-middle rounded-circle badge-properties">
+                            <img src="icons/share-icon.png" alt="share">
+                        </span>
+                        <div class="card-content">
+                            <p class="card-title">Fallow Me</p>
+                            <a href="https://github.com/burcutas96" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://t.me/burcu486" target="_blank">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/burcu_dark/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/burcu-ta%C5%9F-3985a0234/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://discord.com/users/944510789488889868" target="_blank">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footerSection">
+        <div class="container-fluid background-space">
+            <span class="footer-design">Designed By</span>
+            <span class="footer-name">Burcu Taş</span>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/437bb43714.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/custom/script.js"></script>
+</body>
+</html>
