@@ -2,7 +2,7 @@
 <p>It also has a responsive design.</p>
 
 <p>You can browse the site at this link:
-  <a href = "https://burcutas96.github.io/burcutas/" target = "_blank">https://burcutas96.github.io/burcutas/</a>
+  <a href = "https://burcutas96.github.io/burcutas/" target = "_blank">https://burcutas96.github.io/Portfolio/</a>
 </p>
 
 ## --- Home ---
