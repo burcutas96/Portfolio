@@ -30,7 +30,6 @@ tum_repolar = {
 # Sıralamayı REPO_ISIMLERI listesine göre yap
 repolar = [tum_repolar[isim] for isim in REPO_ISIMLERI if isim in tum_repolar]
 
-
 with open("__index.html", "r", encoding="utf-8") as dosya:
     eldeki_dosya = dosya.read()
 
