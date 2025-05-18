@@ -429,6 +429,7 @@ nav.sticky ul>li a::after{
     font-weight: 500;
     margin-top: 4rem;
     color: var(--white);
+    text-align: center;
 }
 
 

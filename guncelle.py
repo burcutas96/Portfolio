@@ -1,17 +1,34 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
 KULLANICI = "burcutas96"
+REPO_ISIMLERI = [
+    "ReCapProject",
+    "GameDemo",
+    "FormProject",
+    "Portfolio",
+    "NewDesignWebSite",
+    "HotelSite"
+]
 
 from ghapi.all import GhApi
 from Renkler   import RENKLER
+from dotenv import load_dotenv
+import os
 
-api     = GhApi()
-repolar = [
-    repo for repo in api.repos.list_for_user(username=f"{KULLANICI}", per_page=100, sort="pushed")
-        # if repo.get("stargazers_count") >= 3
-        if repo.get("language") and repo.get("description")
-]
-repolar = sorted(repolar, key=lambda veri: veri["stargazers_count"], reverse=True)
+load_dotenv()
+
+token = os.getenv("GITHUB_TOKEN")
+
+api = GhApi(token)
+
+# Repo verilerini dict'e çevir (isimlerine göre kolayca erişmek için)
+tum_repolar = {
+    repo["name"]: repo for repo in api.repos.list_for_user(username=KULLANICI, per_page=100)
+    if repo["name"] in REPO_ISIMLERI
+}
+
+# Sıralamayı REPO_ISIMLERI listesine göre yap
+repolar = [tum_repolar[isim] for isim in REPO_ISIMLERI if isim in tum_repolar]
 
 with open("__index.html", "r", encoding="utf-8") as dosya:
     eldeki_dosya = dosya.read()
